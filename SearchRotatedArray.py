@@ -7,6 +7,7 @@ Given the array nums after the possible rotation and an integer target, return t
 
 You must write an algorithm with O(log n) runtime complexity."""
 
+# I need to learn Binary Search! This does not satisfy the runtime complexity.
 
 
 def search(nums, target):
