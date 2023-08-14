@@ -30,8 +30,12 @@ def largestTimeFromDigits(arr):
     Hour = int(ans/100) 
     Minute = ans - Hour * 100 
 
-    print(f"{Hour}:{Minute}")
+    str = "{}:{}".format(Hour, Minute)
+    return str
+
+    
         
 
-arr = [1,2,5,9]
-largestTimeFromDigits(arr)
+arr = [1,2,3,4]
+x = largestTimeFromDigits(arr)
+print(x)
