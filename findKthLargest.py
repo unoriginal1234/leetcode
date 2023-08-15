@@ -12,8 +12,7 @@ def findKthLargest(nums, k):
     return big
 
            
-
-nums = [3,2,1,5,6,4]
+nums = [3,2,1,5,6,4], 
 k = 2
 x = findKthLargest(nums, k)
 print(x)
