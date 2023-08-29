@@ -30,10 +30,10 @@ def reorganizeString(s):
         else:
             last_let = {next_let: my_dict.pop(next_let)}
 
-    if len(ans) == n:
-        return ans
-    else:
+    if len(ans) != n:
         return ""
+    else:
+        return ans
 
 s = "bfrbs"
 x = reorganizeString(s)
