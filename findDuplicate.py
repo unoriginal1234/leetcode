@@ -10,14 +10,9 @@ def findDuplicate(nums):
     You must solve the problem without modifying the array nums and uses only constant extra space.
     """
     n = len(nums)
-    for i in range(0, n - 1):
-        j = i +1
-        while j > 0:
-            if nums[i] == nums[j]:
-                return nums[i]
-            j += 1
-            if j == n:
-                break
+    for i in range(n):
+        if nums[i] in nums[i +1 : ]:
+            return nums[i]
 
 nums = [2,1,2]
 x = findDuplicate(nums)
