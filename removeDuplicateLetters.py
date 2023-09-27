@@ -12,7 +12,6 @@ def removeDuplicateLetters(s):
         if x > 1:
             letters.append(i)
 
-    letters.sort(reverse=True)
     s1 =  list(s)
     
     for i in letters:
